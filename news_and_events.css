@@ -1,0 +1,137 @@
+body {
+    font-family: Open Sans, Helvetica, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 48px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav-menu {
+    display: inline-block;
+}
+
+/* Style the links inside the navigation bar */
+.nav-menu a {
+    color: black;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: black;
+}
+
+nav {
+    padding-bottom: 40px;
+}
+
+main {
+    width: 73vw;
+    margin: 0 auto;
+}
+
+section {
+    padding-bottom: 40px;
+}
+
+.container {
+    display: flex;
+}
+
+.welcome-left {
+    flex-basis: auto;
+}
+
+.welcome-left-text {
+    width: 80%;
+    line-height: 36px;
+    font-size: 1.7em;
+    margin: 0 auto;
+}
+
+.welcome-image-wrapper {
+    text-align: right;
+    width: 600px;
+    resize: both;
+}
+
+.welcome-image-wrapper img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.read-more-btn {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+h3 {
+   text-align: center;
+   font-size: 28px;
+}
+
+.event-block {
+    border: 2px solid black;
+    padding-left: 10px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.event-title {
+    color: #3498DB;
+}
+
+.event-time {
+    font-size: 12px;
+    color: gray;
+}
+
+.event-desc {
+    width: 60%;
+}
+
+.event-register-btn {
+    background-color: #3498DB;
+    border: 2px solid black;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: -2px;
+    margin-bottom: -2px;
+    border-collapse: collapse;
+}
+
+.event-register-btn:hover {
+    color: #3498DB;
+    background-color: white;
+}
