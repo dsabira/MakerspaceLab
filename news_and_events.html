@@ -5,7 +5,7 @@
     <title>News & Events</title>
     <link rel="stylesheet" href="news_and_events.css">
 </head>
-<body>
+<body onload="renderNews()">
   <header>
     <nav>
       <h1>MAKERSPACE LAB</h1>
@@ -35,33 +35,31 @@
     </section>
     <section class="news_section">
       <h3>Join our events!</h3>
-      <div class="event-block">
-        <h4 class="event-title">Workshop on 3D printing objects</h4>
-        <span class="event-time">August 24, 2020, 1PM EST</span>
-        <p class="event-desc">This is a recorded webinar with a $5 fee to view.
-          Learn how to use the Business Model Canvas,
-          a tool that allows you to capture... <a href="#">Read more</a></p>
-        <button class="event-register-btn">Register now</button>
-      </div>
-      <div class="event-block">
-        <h4 class="event-title">Workshop on 3D printing objects</h4>
-        <span class="event-time">August 24, 2020, 1PM EST</span>
-        <p class="event-desc">This is a recorded webinar with a $5 fee to view.
-          Learn how to use the Business Model Canvas,
-          a tool that allows you to capture... <a href="#">Read more</a></p>
-        <button class="event-register-btn">Register now</button>
-      </div>
-      <div class="event-block">
-        <h4 class="event-title">Workshop on 3D printing objects</h4>
-        <span class="event-time">August 24, 2020, 1PM EST</span>
-        <p class="event-desc">This is a recorded webinar with a $5 fee to view.
-          Learn how to use the Business Model Canvas,
-          a tool that allows you to capture... <a href="#">Read more</a></p>
-        <button class="event-register-btn">Register now</button>
+      <div id="eventContainer" class="event-container">
       </div>
     </section>
   </main>
   <footer>
   </footer>
+  <script>
+    function renderNews() {
+      fetch("./db/news.json")
+              .then(response => {
+                return response.json();
+              })
+              .then(data => {
+                let news = data.news;
+                let eventContainer = document.getElementById("eventContainer");
+                for(let i = 0; i < news.length; i++) {
+                  eventContainer.innerHTML += `<div class="event-block">
+                    <h4 class="event-title">` + news[i].title + `</h4>
+                    <span class="event-time">`+ news[i].date_created + `</span>
+                    <p class="event-desc">` + news[i].description + `<a href="#">Read more</a></p>
+                    <button class="event-register-btn">Register now</button>
+                  </div>`
+                }
+              });
+    }
+  </script>
 </body>
 </html>
