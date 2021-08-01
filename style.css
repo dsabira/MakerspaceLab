@@ -2,6 +2,7 @@ body {
     font-family: Open Sans, Helvetica, sans-serif;
     overflow-x: hidden;
     margin: 0;
+    background-color: white;
 }
 
 h1 {
@@ -50,13 +51,13 @@ section {
     display: flex;
 }
 
-.purpose-left {
-    flex-shrink: 1.2;
+.purpose-right {
+    flex-shrink: 1.4;
 }
 
-.purpose-left-text {
-    width: 70%;
-    line-height: 26px;
+.purpose-right-text {
+    width: 60%;
+    line-height: 32px;
 }
 
 .purpose-image-wrapper {
@@ -65,7 +66,6 @@ section {
 
 
 div {
-
 }
 
 .contact-image-wrapper {
@@ -82,6 +82,12 @@ div {
     max-height: 80%;
     margin-right: 0;
 }
+p{
+    color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
 
 table {
     margin-right: 0;
@@ -140,18 +146,25 @@ button {
     background: black;
 }
 
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    width: 2000px;
     position: relative;
     margin: auto;
 }
 
+
 /* Hide the images by default */
 .mySlides {
+    width: 100%;
     display: none;
+}
+
+.mySlides img{
+    width: inherit;
 }
 
 /* Next & previous buttons */
@@ -237,4 +250,117 @@ button {
 
 .img {
 
+}
+
+.welcome-left {
+    flex-basis: auto;
+}
+
+.welcome-left-text {
+    width: 80%;
+    line-height: 36px;
+    font-size: 1.7em;
+    margin: 0 auto;
+}
+
+.welcome-image-wrapper {
+    text-align: right;
+    width: 600px;
+    resize: both;
+}
+
+.welcome-image-wrapper img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.read-more-btn {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    color: white;
+}
+
+.flex-footer div {
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-right: 100px;
+}
+
+#flex-footer-el-1 {
+
+}
+
+#flex-footer-el-1 div {
+    padding: 10px;
+}
+
+#flex-footer-el-2 {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+#flex-footer-el-3 {
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#flex-footer-el-3 div {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.college-name {
+    color: white;
+}
+
+.address-line {
+    color: gray;
+}
+
+.phone {
+    color: gray;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.donate-btn {
+    background-color: gray;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0;
+    display: inline-block;
+    font-size: 16px;
+}
+
+div {
+    border-color: coral;
 }

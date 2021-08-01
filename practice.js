@@ -1,4 +1,2 @@
-function multiply (a, b) {
-    return a * b
-}
-multiply(4, 10);
+var list = ["tiger", "cat", "dog"];
+console.log (list[1]);
