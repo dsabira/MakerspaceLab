@@ -94,4 +94,111 @@ main {
 .resource-signup-btn:hover {
     color: #3498DB;
     background-color: white;
+
+}
+
+#resourceContainer {
+    padding-button: 60px;
+}
+
+.resource-tutorial-btn:hover {
+    color: #3498DB;
+    background-color: white;
+}
+
+.resource-tutorial-btn {
+    background-color: #3498DB;
+    border: 2px solid black;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: -2px;
+    margin-bottom: -2px;
+    width: 200px;
+}
+
+#resource-signup-btn, #resource-tutorial-btn {
+    display:inline-block;
+    /* additional code */
+}
+
+#footer {
+    height: 200px;
+    width: 100vw;
+    background: black;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    color: white;
+}
+
+.flex-footer div {
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-right: 100px;
+}
+
+#flex-footer-el-1 {
+
+}
+
+#flex-footer-el-1 div {
+    padding: 10px;
+}
+
+#flex-footer-el-2 {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+#flex-footer-el-3 {
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#flex-footer-el-3 div {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.college-name {
+    color: white;
+}
+
+.address-line {
+    color: gray;
+}
+
+.phone {
+    color: gray;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.donate-btn {
+    background-color: gray;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0;
+    display: inline-block;
+    font-size: 16px;
 }
