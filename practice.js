@@ -1,2 +1,3 @@
-var list = ["tiger", "cat", "dog"];
-console.log (list[1]);
+/*
+var button = document.getElementById("enter");
+var input = document.getElementById("userinput");*/
